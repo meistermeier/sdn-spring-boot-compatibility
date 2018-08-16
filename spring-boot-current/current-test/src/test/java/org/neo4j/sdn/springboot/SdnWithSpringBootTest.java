@@ -76,8 +76,8 @@ public class SdnWithSpringBootTest extends MultiDriverTestClass {
 
   @Test
   public void findUserByAddressNestedProperty() {
-	// the test will work with 3.0.4 and 3.1.1 (once the later is released)
-	assertThat(ogmVersion).isNotNull();
+	// the test will work with 3.0.4 and 3.1.1
+	// see https://github.com/spring-projects/spring-boot/issues/13999
 	Assume.assumeTrue(!ogmVersion.startsWith("3.1.0"));
 	String userName = "test";
 	User user = new User();
