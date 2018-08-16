@@ -1,0 +1,4 @@
+== About
+This project builds a sample Spring Data Neo4j application against the _current_ and _next_ versions of Spring Boot.
+It takes in consideration that Spring Boot does define a higher Neo4j-OGM version (3.1.x) than it was expected to work with Spring Data Neo4j 5.0.x.
+There is an additional profile (_current-ogm-matching_) that downgrades Neo4j-OGM to the version (3.0.x) that was meant to go with SDN 5.0.x.
